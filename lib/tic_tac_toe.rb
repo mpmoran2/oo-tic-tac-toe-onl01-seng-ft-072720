@@ -34,7 +34,7 @@ WIN_COMBINATIONS = [
     input.to_i - 1
   end 
   
-  def move(position, token)
+  def move(position, token = "X")
     @board[position] = token
   end 
   
