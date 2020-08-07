@@ -1,5 +1,8 @@
 class TicTacToe
-  
+  def initialize (board = nil)
+    @board = board || Array.new(9, " ")
+  end
+
 WIN_COMBINATIONS = [
   [0,1,2],
   [3,4,5],
@@ -10,11 +13,6 @@ WIN_COMBINATIONS = [
   [0,4,8],
   [6,4,2]
 ]
-
-#Initialize method should set board 
-def initialize
-    @board = [" ", " ", " ", " ", " ", " ", " ", " ", " " ]
-end
 
 def display_board
     puts " #{@board[0]} | #{@board[1]} | #{@board[2]} "
@@ -100,10 +98,10 @@ end
 
 def over?
   if won?|| draw?||full?
-  return true
-else
-  return false
-end
+    return true
+  else
+    return false
+  end
 end
 
 def winner
@@ -116,11 +114,11 @@ def play
   while !over?
     turn
   end
-  if won?
-    @winner = winner 
-    puts 'Congratulations ' + @winner + "!"
-  elsif draw?
-    puts "Cat's Game!"
+    if won?
+      @winner = winner 
+      puts 'Congratulations ' + @winner + "!"
+    elsif draw?
+      puts "Cat's Game!"
+    end
   end
-end
 end
