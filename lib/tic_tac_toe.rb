@@ -35,6 +35,7 @@ WIN_COMBINATIONS = [
   end 
   
   def move(position, token)
+    @board[position] = token
   end 
   
   def position_taken?
