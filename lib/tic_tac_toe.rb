@@ -4,6 +4,13 @@ class TicTacToe
   end
 end 
 
+    #Board layout
+    # 0 | 1 | 2
+    #-----------
+    # 3 | 4 | 5
+    #-----------
+    # 6 | 7 | 8
+    
 WIN_COMBINATIONS = [
   [0,1,2]
   [3,4,5],
@@ -33,5 +40,26 @@ WIN_COMBINATIONS = [
   def turn 
   end 
   
+  def turn_count
+  end 
   
+  def current_player
+  end 
   
+  def won?
+  end 
+  
+  def full?
+  end 
+  
+  def draw? 
+  end 
+  
+  def over?
+  end 
+  
+  def winner
+  end 
+  
+  def play 
+  end 
