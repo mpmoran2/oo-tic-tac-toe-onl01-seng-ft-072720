@@ -34,7 +34,7 @@ WIN_COMBINATIONS = [
     input.to_i - 1
   end 
   
-  def move(position, char)
+  def move(position, token)
   end 
   
   def position_taken?
